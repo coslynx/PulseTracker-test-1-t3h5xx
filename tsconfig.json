@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "commonjs",
+    "lib": ["esnext", "dom"],
+    "outDir": "dist",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "jsx": "preserve",
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "incremental": true,
+    "paths": {
+      "@components/*": ["./components/*"],
+      "@pages/*": ["./pages/*"],
+      "@styles/*": ["./styles/*"],
+      "@utils/*": ["./utils/*"],
+      "@config/*": ["./config/*"],
+      "@middleware/*": ["./middleware/*"]
+    },
+    "baseUrl": "."
+  },
+  "include": ["next.config.js", "pages/**/*.{ts,tsx}", "components/**/*.{ts,tsx}", "styles/**/*.{ts,tsx}", "utils/**/*.{ts,tsx}", "config/**/*.{ts,tsx}", "middleware/**/*.{ts,tsx}", "**/*.{ts,tsx}"],
+  "exclude": ["node_modules"]
+}
